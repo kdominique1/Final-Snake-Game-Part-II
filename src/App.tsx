@@ -8,7 +8,6 @@ import { useEffect } from "react";
 export default function App() {
   useEffect(() => {
     document.getElementById("output")!.innerText = "OUTPUT:\n";
-    display("hey");
     const greenSnake = new Snake();
     const brownSnake = new Snake();
     const redSnake = new Snake();
