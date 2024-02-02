@@ -7,8 +7,6 @@ class Snake {
   private currentDirection: number;
   /**
    * Creates a snake with position coordinates (0,0) and a starting direction of 1 (right).
-   * @param currentPosition the starting position.
-    @param currentDirection the starting direction.
    */
   constructor() {
     this.currentPosition = new Point(0, 0);
@@ -17,7 +15,7 @@ class Snake {
 
   /**
   Moves the snake in its current direction the given number of spaces.
-  @param spaces the number of spaces to move the snake.
+  @param spaces - the number of spaces to move the snake.
  */
   
   move(spaces: number) {

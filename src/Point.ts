@@ -5,8 +5,8 @@ class Point {
 
   /**
   Creates a new point with the given numbers.
-  @param xcoord: The given x-coordinate.
-  @param ycoord: The given y-coordinate.
+  @param xcoord - The given x-coordinate.
+  @param ycoord - The given y-coordinate.
  */
   constructor(xcoord: number, ycoord: number) {
     this.xcoord = xcoord;
