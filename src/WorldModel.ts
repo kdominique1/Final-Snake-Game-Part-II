@@ -19,6 +19,8 @@ class WorldModel {
     /** 
     Returns the world model's snake.
     */
+
+    // Use snake with an underscore instead of worldSnake
     public get worldSnake() {
         return this.snake;
 }

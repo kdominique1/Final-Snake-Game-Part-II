@@ -35,6 +35,7 @@ class Snake {
   Turns the snake to the right from its current direction.
  */
 
+// Add comments denoting which number is which direction
   turnRight() {
     if (this.currentDirection === 1) {
       this.currentDirection = 2;
@@ -78,6 +79,7 @@ class Snake {
 Returns the snake's current position coordinates as an array.
  */
   public get position() {
+// Change to Point object using toString method
     return [this.currentPosition.x, this.currentPosition.y];
 }
 }
