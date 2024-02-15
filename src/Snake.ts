@@ -80,7 +80,7 @@ Returns the snake's current position coordinates as an array.
  */
   public get position() {
 // Change to Point object using toString method
-    return [this.currentPosition.x, this.currentPosition.y];
+    return this.currentPosition.toString();
 }
 }
 
