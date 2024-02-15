@@ -21,7 +21,7 @@ class WorldModel {
     */
 
     // Use snake with an underscore instead of worldSnake
-    public get worldSnake() {
+    public get _snake() {
         return this.snake;
 }
 
