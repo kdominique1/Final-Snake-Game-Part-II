@@ -18,15 +18,19 @@ class Snake {
   @param spaces - the number of spaces to move the snake.
  */
   
-  move(spaces: number) {
+   move(spaces: number) {
     if (this.currentDirection === 1) {
+    // Right
       this.currentPosition = new Point(this.currentPosition.x + spaces, this.currentPosition.y
       );
     } else if (this.currentDirection === 2) {
+    // Down
       this.currentPosition = new Point(this.currentPosition.x, this.currentPosition.y - spaces)
     } else if (this.currentDirection === -1) {
+    // Left
       this.currentPosition = new Point(this.currentPosition.x - spaces, this.currentPosition.y)
     } else {
+    // Up
       this.currentPosition = new Point(this.currentPosition.x, this.currentPosition.y + spaces)
     }
   }
@@ -35,16 +39,19 @@ class Snake {
   Turns the snake to the right from its current direction.
  */
 
-// Add comments denoting which number is which direction
   turnRight() {
     if (this.currentDirection === 1) {
-      this.currentDirection = 2;
+      // facing right
+      this.currentDirection = 2; // facing down
     } else if (this.currentDirection === 2) {
-      this.currentDirection = -1;
+      // facing down
+      this.currentDirection = -1; // facing left
     } else if (this.currentDirection === -1) {
-      this.currentDirection = 0;
+          // facing left
+      this.currentDirection = 0; // facing up
     } else {
-      this.currentDirection = 1;
+      // facing up
+      this.currentDirection = 1; // facing right
     }
   }
 
@@ -54,13 +61,17 @@ class Snake {
 
   turnLeft() {
     if (this.currentDirection === 1) {
-      this.currentDirection = 0; 
+      // facing right
+      this.currentDirection = 0; // facing up
     } else if (this.currentDirection === 0) {
-      this.currentDirection = -1; 
+      // facing up
+      this.currentDirection = -1; // facing left
     } else if (this.currentDirection === -1)
-      this.currentDirection = 2; 
+      // facing left
+      this.currentDirection = 2; // facing down
     else {
-      this.currentDirection = 1; 
+      // facing down
+      this.currentDirection = 1; // facing right
     }
   }
 
